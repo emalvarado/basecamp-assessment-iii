@@ -11,7 +11,8 @@ class App extends Component {
       <div className="App">
           <Welcome />
           <Box /> 
-          <p>Something</p>
+          <p>Click button below to grow exponentially!</p>
+          <Button />
           <Ending />
          
       </div>
@@ -45,6 +46,24 @@ class Ending extends Component {
       <div>
       <p className="footer"> The end.</p>
       </div>
+    )
+  }
+}
+
+class Button extends Component {
+  state = {
+    double: 1
+  };
+
+  handleCLick = () => {
+    this.setState({
+      double: this.state.double * 2
+    });
+  };
+
+  render(){
+    return (
+      <button onClick={this.handleCLick}>{this.state.double}</button>
     )
   }
 }

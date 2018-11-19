@@ -27,3 +27,16 @@
   padding: 20px;
   color: navy;
 }
+
+button {
+  padding: 50px;
+  background-color: midnightblue;
+  color: azure;
+  border-radius: 16px;
+  
+ 
+}
+
+button:hover {
+ font-size: 18px;
+}
